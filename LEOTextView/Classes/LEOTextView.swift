@@ -443,15 +443,15 @@ open class LEOTextView: UITextView {
 
     // MARK: - Menu controller button actions
 
-    func boldButtonAction() {
+   open func boldButtonAction() {
         buttonActionWithInputFontMode(.bold)
     }
 
-    func italicButtonAction() {
+    open func italicButtonAction() {
         buttonActionWithInputFontMode(.italic)
     }
 
-    func buttonActionWithInputFontMode(_ mode: LEOInputFontMode) {
+    open func buttonActionWithInputFontMode(_ mode: LEOInputFontMode) {
         guard mode != .normal else {
             return
         }
